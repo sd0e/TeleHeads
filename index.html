@@ -13,12 +13,12 @@
             <h1 class="resultText">Output</h1>
         </div>
         <div class="categoryChooser">
-            <div class="celebrityOption option" onclick="$('.resultText').text(celebrities[Math.floor(Math.random() * celebrities.length)]);">
+            <button class="celebrityOption option" onclick="$('.resultText').text(celebrities[Math.floor(Math.random() * celebrities.length)]);">
                 <span class="categoryTextHolder"><i class="material-icons optionIcon">camera_enhance</i><br>Actors, Actresses and Musicians</span>
-            </div>
-            <div class="athletes option" onclick="$('.resultText').text(celebrities[Math.floor(Math.random() * celebrities.length)]);">
+            </button>
+            <button class="athletes option" onclick="$('.resultText').text(celebrities[Math.floor(Math.random() * celebrities.length)]);">
                 <span class="categoryTextHolder"><i class="material-icons optionIcon">sports_basketball</i><br>Athletes</span>
-            </div>
+            </button>
         </div>
     </body>
 </html>
