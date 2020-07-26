@@ -7,21 +7,16 @@
         <link href="style.css" rel="stylesheet">
         <script src="jquery-3.5.1.min.js"></script>
         <script src="script.js"></script>
-        <script>
-            $(document).on('click', '.celebrityOption', function() {
-                $('.resultText').text(celebrities[Math.floor(Math.random() * celebrities.length)]);
-            });
-        </script>
     </head>
     <body>
         <div class="result">
-            <h1 class="resultText">Output</h1>
+            <h1 class="resultText">Choose a button below</h1>
         </div>
         <div class="categoryChooser">
             <button class="celebrityOption option">
                 <span class="categoryTextHolder"><i class="material-icons optionIcon">camera_enhance</i><br>Actors, Actresses and Musicians</span>
             </button>
-            <button class="athletes option" onclick="$('.resultText').text(celebrities[Math.floor(Math.random() * celebrities.length)]);">
+            <button class="athletes option">
                 <span class="categoryTextHolder"><i class="material-icons optionIcon">sports_basketball</i><br>Athletes</span>
             </button>
         </div>
