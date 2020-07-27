@@ -45,7 +45,8 @@ $(document).on('click', '.random', function() {
 });
 
 function randomChoice() {
-    var choiceNumber = Math.floor(Math.random() * 5);
+    var choiceNumber = Math.floor(Math.random() * 6);
+    console.log(choiceNumber);
     if (choiceNumber == 0) {
         $('.resultText').text(celebrities[Math.floor(Math.random() * celebrities.length)]);
         $('.result').attr("style", "color: white; background-color: #d66bb3;");
